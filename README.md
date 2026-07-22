@@ -1,42 +1,30 @@
-# Ai-Blog-writer
-these may help to show the social new and army releted new 
--------------------------------------
- AI Army Blog Writer
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Blog Writer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-[Generate Blog]
+<div class="container">
+    <h1>🤖 AI Blog Writer</h1>
 
-Categories
-- Indian Army
-- Social Awareness
-- National Events
+    <input
+        type="text"
+        id="topic"
+        placeholder="Enter a blog topic..."
+    >
 
-Recent Blogs
-----------------------------
-| Image |
-| Blog Title |
-| Read More |
-----------------------------
-# AI Army Blog Writer
+    <button onclick="generateBlog()">
+        Generate Blog
+    </button>
 
-An AI-powered blogging platform that generates informative articles related to the Indian Army and social awareness initiatives.
+    <div id="output"></div>
+</div>
 
-## Features
-- AI blog generation
-- Blog editor
-- Video embedding
-- Image upload
-- Category management
-- Responsive UI
+<script src="script.js"></script>
 
-## Tech Stack
-- React
-- Node.js
-- Express
-- MongoDB
-- OpenAI API
-
-## Installation
-
-npm install
-
-npm run dev
+</body>
+</html>
