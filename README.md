@@ -1,30 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Blog Writer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+# AI Blog Writer — Mini Project
 
-<div class="container">
-    <h1>🤖 AI Blog Writer</h1>
+A minimal AI blog-writer that generates blog posts (title, summary, sections, tags) from a transcript or text using the OpenAI API.
 
-    <input
-        type="text"
-        id="topic"
-        placeholder="Enter a blog topic..."
-    >
+## Tech Stack
+- **Backend**: Node.js + Express
+- **Frontend**: React + Vite
+- **Styling**: CSS
+- **API**: OpenAI API
 
-    <button onclick="generateBlog()">
-        Generate Blog
-    </button>
+## Project Structure
+```
+ai-blog-writer/
+├── server/
+│   ├── package.json
+│   ├── index.js
+│   └── posts.json
+├── client/
+│   ├── package.json
+│   ├── index.html
+│   └── src/
+│       ├── main.jsx
+│       ├── App.jsx
+│       ├── styles.css
+│       └── components/
+│           └── CreatePost.jsx
+├── .gitignore
+├── LICENSE
+└── README.md
+```
 
-    <div id="output"></div>
-</div>
+## Installation
 
-<script src="script.js"></script>
+### Backend Setup
+```bash
+cd server
+npm install
+```
 
-</body>
-</html>
+### Frontend Setup
+```bash
+cd client
+npm install
+```
+
+## Environment Variables
+Create a `.env` file in the `server` directory:
+```
+OPENAI_API_KEY=your_api_key_here
+PORT=5000
+```
+
+## Running the Project
+
+### Start Backend
+```bash
+cd server
+npm start
+```
+
+### Start Frontend (in another terminal)
+```bash
+cd client
+npm run dev
+```
+
+## Features
+- Generate blog posts from text or transcripts
+- AI-powered title, summary, and section generation
+- Tag suggestions
+- Simple and clean UI
+
+## License
+MIT License - See LICENSE file for details
